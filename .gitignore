@@ -1,0 +1,64 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore user-specific settings
+*.user
+*.suo
+*.sln.docstates
+
+# Ignore Visual Studio temporary files and caches
+_ReSharper.*/
+.vs/
+
+# Ignore ASP.NET temporary compilation output
+/App_Data/TEMP/
+
+# Ignore publish output
+publish/
+
+# Ignore files related to local development
+appsettings.Development.json
+*.log
+
+# Ignore database related files (if you're not tracking migrations)
+*.mdf
+*.ldf
+*.db
+
+# Ignore test result files
+TestResults/
+
+# Ignore any environment-specific files you don't want to track
+# Example:
+# appsettings.Staging.json
+
+# Ignore temporary files created by some tools
+*.cache
+*.dump
+
+# Ignore operating system specific files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules if your project uses frontend frameworks
+node_modules/
+
+# Ignore yarn cache if you use Yarn
+.yarn/cache
+
+# Optional: Ignore documentation build output (if applicable)
+docs/_build/
+
+# Optional: Ignore coverage reports (if applicable)
+coverage/
+
+# Optional: Ignore container related files (if applicable)
+docker-compose*.yml
+.dockerignore
+
+# vscode files
+.vscode
