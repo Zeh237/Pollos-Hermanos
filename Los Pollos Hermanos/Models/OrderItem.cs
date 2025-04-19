@@ -1,10 +1,11 @@
-using Los_Pollos_Hermanos.Models;
-using Microsoft.AspNetCore.Mvc;
-
-public class OrderItem{
-    private int Id {get; set;}
-    private int OrderId {get; set;}
-    private Order? Order {get; set;}
-    private int ProductId {get; set;}
-    
+namespace Los_Pollos_Hermanos.Models{
+    public class OrderItem{
+        public int Id {get; set;}
+        public int OrderId {get; set;}
+        public Order? Order {get; set;}
+        public int ProductId {get; set;}
+        public Product? product {get; set;}
+        public int Quantity {get; set;}
+        public decimal price {get; set;}
+    }
 }

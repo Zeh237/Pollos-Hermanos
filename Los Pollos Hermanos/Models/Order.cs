@@ -1,14 +1,12 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace Los_Pollos_Hermanos.Models
 {
     public class Order{
-        private int Id {get; set;}
-        private DateTime CreatedAt {get; set;}
-        private string? UserId {get; set;}
-        private User User {get; set;}
-        private int Amount {get; set;}
-        private ICollection<OrderItem> OrderItems {get; set;}
+        public int Id {get; set;}
+        public DateTime CreatedAt {get; set;}
+        public string? UserId {get; set;}
+        public User User {get; set;}
+        public int Amount {get; set;}
+        public ICollection<OrderItem> OrderItems {get; set;}
     }
     
 }
