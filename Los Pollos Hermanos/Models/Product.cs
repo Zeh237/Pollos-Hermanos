@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+
 namespace Los_Pollos_Hermanos.Models{
     public class Product{
         public int Id {get; set;}
@@ -6,8 +9,18 @@ namespace Los_Pollos_Hermanos.Models{
         public decimal price {get; set;}
         public int stock {get; set;}
         public int CategoryId {get; set;}
+
+        [NotMapped]
+        public IFormFile ImageFile {get; set;}
+        public string ImageUrl {get; set; } = "https://via.placeholder.com/159";
+
+        [ValidateNever]
         public Category? Category {get; set;}
+
+        [ValidateNever]
         public ICollection<OrderItem>? OrderItems {get; set;}
+
+        [ValidateNever]
         public ICollection<ProductIngredient>? ProductIngredients {get; set;}
 
     }
